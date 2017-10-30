@@ -6,4 +6,4 @@ def process_user_query(query_string):
             result = (f'Hello {x}!')
             listos.append(result)
     return listos
-process_user_query('Alex si Bob si Alex')
+#process_user_query('Alex si Bob si Alex')
