@@ -9,5 +9,4 @@ def process_user_query(query_string):
             result = (f'Hello {x}!')
             listos.append(result)
     return set(listos)
-
 #process_user_query('Alex si Bob ')
