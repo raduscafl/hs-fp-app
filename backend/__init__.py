@@ -1,3 +1,14 @@
+
+
+
 def process_user_query(query_string):
-    result = {"Oi, hi there!"}
-    return result
+
+    listos=[]
+    query_string=query_string.split(',')
+
+    for x in query_string:
+        result = (f'Hello {x}!')
+        listos.append(result)
+    return listos
+
+# process_user_query('Alex, Bob, Radu')
