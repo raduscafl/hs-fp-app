@@ -1,6 +1,6 @@
 def process_user_query(query_string):
         population=[]
-        query_string=query_string.split(' ')
+        query_string=query_string.split()
 
         city=query_string.index("(disambiguation).")
         population.append("City:" + query_string[city+1])
