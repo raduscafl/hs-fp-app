@@ -11,4 +11,5 @@ def process_user_query(query_string):
         for pop in query_string[i:ix]:
             population.append(pop)
         return population
-process_user_query("Populations (disambiguation). Bucale Elevation 667 m (2,188 ft) Population (2015[4])• Municipality 3,141,991 Demonym(s) Londoner Cockney (colloquial)")
+
+#process_user_query(r')
