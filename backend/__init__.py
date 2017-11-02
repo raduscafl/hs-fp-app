@@ -2,7 +2,7 @@ def process_user_query(query_string):
     population=[]
     player=[]
     page=""
-    warning="You have enter a wiki page which is not about a person or a city"
+    warning="You have enter a wiki page which is not about a football player or a city"
     query_string=query_string.strip().split()
     query_string = [x.replace('•', ' ') for x in query_string]
     query_string = [i for i in query_string if i != ' ']
