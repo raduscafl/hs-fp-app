@@ -17,17 +17,33 @@ def process_user_query(query_string):
         pass
 
     if page=="City":
-        city=query_string.index("(disambiguation).")
-        population.append("City:" + query_string[city+1])
+        city=query_string.index("From")
+        if city==1:
+            population.append("City:" + query_string[0])
+        elif city==2:
+            population.append("City:" + query_string[0]+ " " +query_string[1])
+        elif city==3:
+            population.append("City:" + query_string[0]+ " " +query_string[1]+ " " +query_string[2])
+        else:
+            population.append("City:" + query_string[0]+ " " +query_string[1]+ " " +query_string[2]+ " " +query_string[3])
 
         country=query_string.index("Country")
         population.append("Country:" + query_string[country+1])
 
         area=query_string.index("km2")
         population.append("Area:" + query_string[area-1]+ " "+ query_string[area])
+
         i=query_string.index("Population")
         i=i+3
-        if query_string[i]=="Total" or query_string[i]=="Metropolis" or query_string[i]=="City":
+        if query_string[i]=="Total" or query_string[i]=="Metropolis" or query_string[i]=="City" or query_string[i]=="London" or query_string[i]=="Urban" or query_string[i]=="Special" or query_string[i]=="2016"or query_string[i]=="2016)"or query_string[i]=="Metropolitan" :
+            i=i+1
+        else:
+            pass
+        if query_string[i]=="Total" or query_string[i]=="Metropolis" or query_string[i]=="City" or query_string[i]=="London" or query_string[i]=="Urban" or query_string[i]=="Special"or query_string[i]=="2016"or query_string[i]=="2016)"or query_string[i]=="Metropolitan"or query_string[i]=="Metropolitan" :
+            i=i+1
+        else:
+            pass
+        if query_string[i]=="Total" or query_string[i]=="Metropolis" or query_string[i]=="City" or query_string[i]=="London" or query_string[i]=="Urban" or query_string[i]=="Special"or query_string[i]=="2016"or query_string[i]=="2016)"or query_string[i]=="Metropolitan" :
             i=i+1
         else:
             pass
@@ -69,4 +85,4 @@ def process_user_query(query_string):
     else:
         return warning
 
-#process_user_query(r'''''')
+process_user_query(r'''''')
