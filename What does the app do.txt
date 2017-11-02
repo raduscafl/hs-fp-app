@@ -1,0 +1,3 @@
+The user inputs a everything from a wiki page. 
+The page should be about a football player or a city, if is not the progrm would display a warning message.
+The app will display information about the player/city you inputed from the page.
